@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #4891ff;
+    --light-color: #f4f4f6;
+    --dark-color: #111;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    background: #fff;
+    background-image: url(images/clouds.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-width: 15rem;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+    
+}
+
+.navbar ul li a {
+    padding: 10px 50px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+    display: inline-block;
+    color: var(--light-color);
+}
+
+.navbar ul li .btn:hover {
+    display: inline-block;
+    color: var(--primary-color);
+    cursor: pointer;
+    background-color: #111111;
+}
+
+.navbar ul li a i {
+    margin-right: 10px;
+}
+
+.navbar ul li:last-child a {
+    margin-left: 10px;
+}
+
+/* Quote Section */
+.quote .container {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.quote .quote-content {
+    text-align: center;
+}
+
+.quote-heading {
+    padding-bottom: 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.quote-text {
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.plane-button {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-adventure {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* About Me Countries */
+.countries .container {
+    padding: 10px;
+    padding-bottom: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    background-color: #292a2bec;
+    justify-content: center;
+    column-gap: 30px;
+    border-radius: 100px;
+}
+
+.countries .container-adventure {
+    padding: 30px;
+    padding-bottom: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    background-color: #3e3f40ec;
+    justify-content: center;
+    /* align-items: center; */
+    column-gap: 30px;
+    border-radius: 100px;
+}
+
+.countries-sm .container-sm {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    background-color: #ffffff7a;
+    justify-content: center;
+    column-gap: 30px;
+    border-radius: 100px;
+}
+
+.country {
+    /* background-color: aqua; */
+    width: 100%;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+#country-malaysia {
+    /* padding-block-end: 250px;
+    padding-block-start: 200px; */
+    display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+
+#country-australia {
+    display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+
+#country-korea {
+    padding-bottom: 0px;
+    width: 90%;
+    display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+
+#country-us {
+    padding-bottom: 0px;
+    width: 90%;
+    display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+
+#country-japan {
+    padding-bottom: 0px;
+    width: 90%;
+    display:flex;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+
+.country:hover{
+    background-color:#e4d9d97b;
+    transition: all 1s ease;
+    opacity: 0.9;
+    color:#333;
+    border-radius: 100px;
+}
+
+#country-malaysia:hover {
+    filter: brightness(80%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#country-australia:hover {
+    filter: brightness(80%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+/* About Me Content */
+.about-text {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 150;
+}
+
+.img__description {
+    position: absolute;
+    /* background: rgba(29, 106, 154, 0.72); */
+    color: #fff;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 300;
+    transition-timing-function:ease-in-out;
+}
+
+.country-malaysia:hover .img__description{
+    opacity: 1;
+}
+
+.country-australia:hover .img__description{
+    opacity: 1;
+}
+
+
+/* Adventure content */
+.adventure_country:hover{
+    /* background-color: aqua; */
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.adventure_country:hover{
+    background-color:#87CEEB;
+    transition: all 1s ease;
+    opacity: 0.9;
+    color:#333;
+    border-radius: 100px;
+}
+
+#country-korea:hover {
+    filter: brightness(80%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#country-us:hover {
+    filter: brightness(60%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#country-japan:hover {
+    filter: brightness(60%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.country-korea:hover .img__description{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.country-us:hover .img__description{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.country-japan:hover .img__description{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.adventure-text {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 0px;
+    color: #fff;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-plane {
+    background: none;
+    color: #fff;
+}
+
+.btn-plane:hover {
+    opacity: 0.9;
+    background: red;
+    color: #333;
+}
+
+.container-sm .btn {
+    color: #d02222;
+}
+
+.container-sm .btn:hover {
+    opacity: 0.9;
+    background-color: #d02222;
+    color: #333;
+}
